@@ -168,11 +168,35 @@ main > section{
 .features-card{
     max-width: 580px;
     height: 120px;
-    /* border: 1px solid rgb(192, 189, 189); */
     border-radius: 8px;
     box-shadow: 0px 0px 5px;
     padding: 20px 20px;
     margin-top: 20px;
+}
+.box-card{
+    max-width: 340px;
+    height: 200px;
+    background-color:rgba(255, 144, 14, 1);
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    margin: -176px -94px;
+    position: relative;
+    z-index: 1;
+}
+.box-card-title{
+    font-size: 64px;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    padding-top: 34px;
+}
+.box-card-discription{
+    color: #ffff;
+    font-size: 25px;
+    font-weight: 500;
+   text-align: center;
+   margin-top: -48px;
+
 }
 /* sume facts related styles */
 
@@ -229,6 +253,7 @@ main > section{
 }
 
 /* footer style end heare */
+
 /* responsive smoll size midea queary  */
 
 @media screen and (max-width:576px) {
@@ -236,7 +261,7 @@ main > section{
         flex-direction: column;
         
     }
-    .teams-img-container, .Facts-container, .sponspors-companis{
+    .teams-img-container, .Facts-container, .sponspors-companis, .Features-enjoy-container{
         grid-template-columns: repeat(1, 1fr);
     }
     .Facts-container{
@@ -253,6 +278,10 @@ main > section{
         margin-left: 10px;
         text-align: center;
         padding: 10px;
+    }
+    .Features-enjoy-container{
+        margin: 20px;
+        max-width: control;
     }
 }
 /* mideam  size divice qyeary */
