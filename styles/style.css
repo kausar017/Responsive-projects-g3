@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+.work-sans-font {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* *{
+    margin: 0;
+    padding: 0;
+} */
+
+/* sheard styles */
+    .display-flex{
+        display: flex;
+    }
+     /* color dark-02 */
+    .text-dark-02{
+        color: #424242;
+    } 
+    /* color dark-03 */
+    .text-dark-03{
+        color: #727272;
+        /* font-size: 16px;
+        font-weight: ; */
+    }
+   .bg-light{
+    background-color: rgba(255, 144, 14, 0.1);
+   }
+
+.text-primary{
+    color: rgb(255, 144, 14);
+}
+.section-titel{
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+.fact-name{
+    font-size: 20px;
+    font-weight: 600px;
+    margin-top: 10px;
+}
+/* button-praimary */
+   .btn-praimary{
+        background-color: rgb(255, 144, 14);
+        font-size: 1.25rem;
+        color: #ffff;
+        padding: 20px 25px;
+        border-radius: 8px;
+        border: none;
+        cursor: pointer;
+
+   }
+   main{
+    max-width: 1440px;
+    margin: 0 auto;
+   }
+main > section{
+    margin-top: 84px;
+}
+/* header related styles */
+
+
+/* navbar related styles */
+
+.navbar{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item{
+    list-style: none;
+    margin-right: 30px;
+    
+}
+.nav-links{
+
+}
+
+.brand{
+    font-size: 3rem;
+    font-weight: 700px;
+}
+
+.nav-link{
+    text-decoration: none;
+    font-weight: 500px;
+    font-size: 18px;
+}
+.navbar, .banner{
+   max-width: 1440px;
+   margin: 0 auto;
+}
+/* banner related styles */
+.banner-content{
+    max-width: 850px;
+    margin: 0px auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.banner-title{
+    font-weight: 700px;
+    font-size: 4rem;
+}
+
+.banner-discription{
+    margin-bottom: 32px;
+}
+.banner-img{
+    width: 100%;
+    margin-bottom: 45px;
+}
+
+/* teames and features related styles */
+
+.teams{
+    align-items: center;
+}
+.teams-img-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    
+}
+.out-features{
+    margin-left: 76px;
+    max-width: 530px;
+}
+
+#quick-list{
+    font-weight: 500;
+}
+
+
+.features-description{
+    font-size: 16px;
+    /* font-weight: 26px; */
+    line-height: 26px;
+
+}
+
+/* Features and enjoy related style */
+.Features-enjoy-container{
+    max-width: 1440px;
+    height: 1060px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+}
+.features-containt{
+    max-width: 580px;
+    height: 980px;
+}
+.features-img{
+    max-width: 800px;
+    height: 1060px;
+}
+.features-contain-title{
+    font-size: 45px;
+    font-weight: 800;
+}
+.features-contain-discription{
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+.features-card{
+    max-width: 580px;
+    height: 120px;
+    /* border: 1px solid rgb(192, 189, 189); */
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px;
+    padding: 20px 20px;
+    margin-top: 20px;
+}
+/* sume facts related styles */
+
+.Facts-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 120px;
+    margin-top: 100px;
+    
+}
+.fact-card{
+    border: 1px solid rgba(255, 144, 14, 1);
+    width: 240px;
+    height: 240px;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.fact-numbar{
+    font-size: 2.8rem;
+    font-weight: 600;
+    margin-top: 5px;
+    margin-bottom: 10px;
+
+}
+
+/* Sponspors rilatied style */
+.sponspors-info{
+    max-width: 540px;
+    margin: 50px auto;
+    text-align: center;
+}
+.sponspors-companis{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+.sponspors-companis img{
+    filter: grayscale(100%);
+}
+/* footer style star heare */
+.footer{
+    width: 1440px;
+    height: 100px;
+    margin: 0px auto;
+    background-color: rgba(255, 244, 231, 1);
+    margin-top: 130px;
+}
+.footer-discription{
+    font-size: 1.25rem;
+    font-weight: 600;
+   text-align: center;
+   padding: 40px;
+}
+
+/* footer style end heare */
+/* responsive smoll size midea queary  */
+
+@media screen and (max-width:576px) {
+    .navbar, .nav-links, .teams{
+        flex-direction: column;
+        
+    }
+    .teams-img-container, .Facts-container, .sponspors-companis{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .Facts-container{
+        justify-items: center;
+        gap: 20px;
+        align-items: center;
+    }
+    .sponspors-companis{
+        justify-items: center;
+        gap: 50px;
+        align-items: center;
+    }
+    .out-features{
+        margin-left: 10px;
+        text-align: center;
+        padding: 10px;
+    }
+}
+/* mideam  size divice qyeary */
+@media screen and (min-width: 576px) and (max-width:992px) {
+    .teams{
+        flex-direction: column;
+    }
+
+    .out-features{
+        margin-left: 50px auto; 
+    }
+    .Facts-container{
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0px 20px 0px 20px;
+
+    }
+    .sponspors-companis{
+        grid-template-columns: repeat(3, 1fr);
+        gap: 50px;
+        padding: 0px 20px 0px 20px;
+    }
+}
